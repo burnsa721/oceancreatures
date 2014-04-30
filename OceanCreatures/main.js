@@ -9,8 +9,16 @@ myApp.OceanCreatures = function () {
 }
 
 myApp.createCreature = function () {
+    var name = document.getElementById("name").value;
+    var size = document.getElementById("size").value;
+    var img = document.getElementById("img").value;
+    myApp.OceanCreatures.push(name, size, img);
 
+    var display = document.getElementById("table").innerHTML;
 
+    name = "";
+    size = "";
+    img = "";
 }
 
 myApp.deleteCreature = function (key) {
@@ -20,5 +28,4 @@ myApp.deleteCreature = function (key) {
     request.open('DELETE', myApp.url + key + '.json', true);
 
     request//and continue one with normal ajax request
-
 }
