@@ -12,6 +12,8 @@ myApp.createCreature = function () {
 
 
 }
+myApp.editCreature = function();
+myApp.current
 
 myApp.deleteCreature = function (key) {
 
