@@ -15,13 +15,16 @@ myApp.createCreature = function () {
     myApp.OceanCreatures.push(name, size, img);
 
     var display = document.getElementById("table").innerHTML;
-
+   
     name = "";
     size = "";
     img = "";
 }
 myApp.editCreature = function();
-myApp.current
+    myApp.current= index;
+    document.getElementById("").value= myApp.oceanCreature[index].name;
+    document.getElementByID("").value= myApp.oceanCreautre[index].size;
+
 
 myApp.deleteCreature = function (key) {
 
