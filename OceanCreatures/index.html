@@ -1,12 +1,20 @@
 ﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title></title>
+    <title>Ocean Creature</title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body>
-    
-    
-    
-    <script src="main.js"></script>
+    <h1>Ocean Creature</h1>
+    <input type="text" id="name" placeholder="Enter Name of Ocean Creature" />
+    <input type="text" id="size" placeholder="Enter size of animal" />
+    <input type="text" id="img" placeholder="Enter image link" />
+    <div class="btn btn-info" id="add" onclick="app.createCreature();">Add Animal</div>
+    <table id="table"></table>
+
+
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="_movie.js"></script>
 </body>
 </html>

@@ -20,12 +20,20 @@ myApp.createCreature = function () {
     size = "";
     img = "";
 }
+
 myApp.editCreature = function();
     myApp.current= index;
     document.getElementById("").value= myApp.oceanCreature[index].name;
     document.getElementByID("").value= myApp.oceanCreautre[index].size;
+    document.getElementById("").value= myApp.oceanCreature[index].img;
+    
+    myApp.saveEdit = function(){
+        var name = document.getElementById("").value;
+        var size = document.getElementById("").value;
+        myApp.oceanCreature[myApp.editCreature].name = name;
+        myApp.oceanCreature[myApp.editCreature].size = size;
 
-
+    }
 myApp.deleteCreature = function (key) {
 
     var request = new XMLHttpRequest();
